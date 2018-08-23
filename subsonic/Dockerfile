@@ -24,6 +24,8 @@ RUN sed -i 's/^# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && \
 EXPOSE 4040
 VOLUME /mnt/music
 VOLUME /opt/app/state
+VOLUME /opt/app/playlist
+VOLUME /opt/app/podcast
 
 ARG SUBSONIC_VERSION
 
